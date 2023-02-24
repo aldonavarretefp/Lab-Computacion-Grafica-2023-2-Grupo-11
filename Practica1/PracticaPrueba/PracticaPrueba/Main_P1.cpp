@@ -13,6 +13,7 @@ void resize(GLFWwindow* window, int width, int height);
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
+
 int main() {
 	glfwInit();
 	//Verificación de compatibilidad 
@@ -65,7 +66,8 @@ int main() {
 	unsigned int indices[] = {  // note that we start from 0!
 		0,2,1,// second Triangle
 		0,1,3,
-		1,2,3,
+		1,2,3
+		
 	};
 
 
@@ -117,8 +119,8 @@ int main() {
 		OurShader.Use();
 		glBindVertexArray(VAO);
 		glPointSize(10);
-		glDrawArrays(GL_LINES, 0, 4);
-	    glDrawElements(GL_TRIANGLES,6, GL_UNSIGNED_INT, (GLvoid*)(3*sizeof(GLfloat)));
+		//glDrawArrays(GL_LINES, 0, 4);
+	    //glDrawElements(GL_TRIANGLES,6, GL_UNSIGNED_INT, (GLvoid*)(3*sizeof(GLfloat)));
 	
 		glBindVertexArray(0);
 

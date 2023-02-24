@@ -36,3 +36,6 @@ Hay una imagen en la presentacion que describe cada uno de ellos
 
 # Referencias
 * https://doc.instantreality.org/tools/color_calculator/
+# Tarea
+* 2 Figuras para el reporte
+

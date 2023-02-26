@@ -57,21 +57,35 @@ int main() {
 	// Set up vertex data (and buffer(s)) and attribute pointers
 	float vertices[] = {
 		//X     Y     Z     R     G    B
-		//0.5f,  0.5f, 0.0f, 1.0f,0.0f,0.0f,  // A
-		//0.5f, -0.5f, 0.0f, 0.0f,1.0f,0.0f,  // B
-		//-0.5f, -0.5f, 0.0f,0.0f,0.0f,1.0f,  // C
-		//-0.5f,  0.5f, 0.0f,0.0f,1.0f,1.0f, //  D
-		-0.5f,  0.7f, 0.0f,0.0f,1.0f,1.0f, //  A
-		-0.7f,  0.4f, 0.0f,0.0f,1.0f,1.0f, //  A1
-		-0.3f,  0.4f, 0.0f,0.0f,1.0f,1.0f, //  A2
-		-0.5f,  0.4f, 0.0f,0.0f,1.0f,1.0f, //  A3
+		-0.5f,  0.9f, 0.0f, 0.388f, 0.666f, 0.913f, //  A
+		-0.9f,  0.2f, 0.0f, 0.388f, 0.666f, 0.913f, //  A1
+		-0.1f,  0.2f, 0.0f, 0.388f, 0.666f, 0.913f, //  A2
+		-0.5f,  0.2f, 0.0f, 0.388f, 0.666f, 0.913f, //  A3
+		 0.4f,  -0.2f, 0.0f,0.796f, 0.8f, 0.180f, //  B
+		 0.6f,  -0.2f, 0.0f,0.796f, 0.8f, 0.180f, //  B1
+		 0.9f,  -0.8f, 0.0f,0.796f, 0.8f, 0.180f, //  B2
+		 0.1f,  -0.8f, 0.0f,0.796f, 0.8f, 0.180f, //  B3
+		-0.2f,  -0.2f, 0.0f,0.227f, 0.611f, 0.317f, //  C
+		-0.2f,  -0.8f, 0.0f,0.227f, 0.611f, 0.317f, //  C1
+		-0.8f,  -0.8f, 0.0f,0.227f, 0.611f, 0.317f, //  C2
+		-0.8f,  -0.2f, 0.0f,0.227f, 0.611f, 0.317f, //  C3
+		0.5f,  0.9f, 0.0f,  0.466f, 0.082f, 0.898f, //  D
+		0.2f,  0.6f, 0.0f,  0.466f, 0.082f, 0.898f, //  D1
+		0.3f,  0.2f, 0.0f,  0.466f, 0.082f, 0.898f, //  D2
+		0.7f,  0.2f, 0.0f,  0.466f, 0.082f, 0.898f, //  D3
+		0.8f,  0.6f, 0.0f,  0.466f, 0.082f, 0.898f, //  D4
 	
 	};
 	unsigned int indices[] = {  // note that we start from 0!
 		0,1,3, // Triangle shade
 		0,3,2, // Triangle line
-		0,1,3,
-		1,2,3
+		4,5,6, // Hex shade
+		4,6,7,  // Hex line
+		8,11,10, // Rect shade
+		8,9,10, // Rect line
+		12,13,14,  // Trap shade 1
+		12,14,16, // Trap shade 2
+		16,15,14,     // Trap line
 	};
 
 	GLuint VBO, VAO,EBO; // Input vertex necesito crear los buffers.
@@ -119,33 +133,31 @@ int main() {
 		glBindVertexArray(VAO);
 		glPointSize(10);
 		//glDrawArrays(GL_POINTS, 1, 1); // Unicamente trabaja con vertices y con la informacion contigua.
-		//glDrawArrays(GL_POINTS, 3, 1); // Unicamente trabaja con vertices y con la informacion contigua.
-	    
-		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (GLvoid*)(3 * sizeof(GLfloat))); // Tome 6 elementos y empieze en 3
-		//glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(3 * sizeof(GLfloat))); 
-		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (GLvoid*)(0 * sizeof(GLfloat))); 
-		//glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(6 * sizeof(GLfloat))); 
+		//glDrawArrays(GL_POINTS, 3, 1); // Unicamente trabaja con vertices y con la informacion contigua. 
 		
 		// Triangulo
 		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(0 * sizeof(GLfloat))); 
-		glDrawElements(GL_LINES, 3, GL_UNSIGNED_INT, (GLvoid*)(3 * sizeof(GLfloat))); 
+		glDrawElements(GL_LINE_LOOP, 3, GL_UNSIGNED_INT, (GLvoid*)(3 * sizeof(GLfloat))); 
+		
+		// Trap
+		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(6 * sizeof(GLfloat))); 
+		glDrawElements(GL_LINE_LOOP, 3, GL_UNSIGNED_INT, (GLvoid*)(9 * sizeof(GLfloat))); 
 		
 		// Rect
 
-		//glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(0 * sizeof(GLfloat)));
-		//glDrawElements(GL_LINES, 3, GL_UNSIGNED_INT, (GLvoid*)(3 * sizeof(GLfloat))); 
-
-		// Trap
+		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(12 * sizeof(GLfloat)));
+		glDrawElements(GL_LINE_LOOP, 3, GL_UNSIGNED_INT, (GLvoid*)(15 * sizeof(GLfloat))); 
 
 		// Hex
+		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(18 * sizeof(GLfloat)));
+		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (GLvoid*)(21 * sizeof(GLfloat))); 
+		glDrawElements(GL_LINE_LOOP, 3, GL_UNSIGNED_INT, (GLvoid*)(24 * sizeof(GLfloat))); 
 
 		glBindVertexArray(0);// }
 
 		// Swap the screen buffers
 		glfwSwapBuffers(window);
 	}
-
-
 
 	glfwTerminate();
 	return EXIT_SUCCESS;

@@ -58,7 +58,7 @@ int main() {
 
 	// Set up vertex data (and buffer(s)) and attribute pointers
 	float vertices[] = {
-		//X     Y     Z     R     G    B
+		//X     Y     Z     R		G		B
 		-0.8f,  0.1f, 0.0f, 0.858f, 0.858f, 0.839f, //  A
 		-0.7f,  0.2f, 0.0f, 0.858f, 0.858f, 0.839f, //  A1
 		-0.8f,  0.3f, 0.0f, 0.858f, 0.858f, 0.839f, //  A2

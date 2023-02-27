@@ -1,5 +1,5 @@
 ## Datos
-* X,Y,Z
+* X,Y,Z.
 * R G B a
 * Normales
 * Tangentes

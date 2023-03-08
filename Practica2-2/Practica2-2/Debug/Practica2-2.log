@@ -1,3 +1,4 @@
-﻿  Main_PR2.cpp
-LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
-  Practica2-2.vcxproj -> C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica2-2\Debug\Practica2-2.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Practica2-2-LAPTOP-HI7Q5P4Q.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  317242409_PRACTICA2_GPO11.cpp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Practica2-2.vcxproj -> C:\Users\aaldi\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\school\8th-semester\lab-compu-grafica-repo\Practica2-2\Debug\Practica2-2.exe

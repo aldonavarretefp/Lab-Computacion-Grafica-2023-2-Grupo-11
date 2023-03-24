@@ -1,0 +1,14 @@
+﻿  Main.cpp
+C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Practica5\Main.cpp(108,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Practica5\Main.cpp(205,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Practica5\Main.cpp(206,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Practica5\Main.cpp(210,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Practica5\Main.cpp(211,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Practica5\Main.cpp(213,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Practica5\Main.cpp(214,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+soil2-debug.lib(etc1_utils.obj) : warning LNK4099: no se encontró PDB '' con 'soil2-debug.lib(etc1_utils.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_DXT.obj) : warning LNK4099: no se encontró PDB '' con 'soil2-debug.lib(image_DXT.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_helper.obj) : warning LNK4099: no se encontró PDB '' con 'soil2-debug.lib(image_helper.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(SOIL2.obj) : warning LNK4099: no se encontró PDB '' con 'soil2-debug.lib(SOIL2.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+  Practica5.vcxproj -> C:\Users\CGIH11\Desktop\Lab-Computacion-Grafica-2023-2-Grupo-11\Practica5\Debug\Practica5.exe

@@ -1,0 +1,10 @@
+newmtl ___Default
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TropicalFish12.jpg
+map_Ka TropicalFish12.jpg
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00

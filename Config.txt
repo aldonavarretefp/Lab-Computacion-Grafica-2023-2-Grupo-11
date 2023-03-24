@@ -1,3 +1,4 @@
 $(SolutionDir)/External Libraries/GLEW/include;$(SolutionDir)/External Libraries/GLFW/include;$(SolutionDir)/External Libraries/glm
+$(SolutionDir)/External Libraries/GLEW/include;$(SolutionDir)/External Libraries/GLFW/include;$(SolutionDir)/External Libraries/glm;$(SolutionDir)/External Libraries/assimp/include
 $(SolutionDir)/External Libraries/GLEW/lib/Release/Win32;$(SolutionDir)/External Libraries/GLFW/lib-vc2015
 opengl32.lib;glew32.lib;glfw3.lib;

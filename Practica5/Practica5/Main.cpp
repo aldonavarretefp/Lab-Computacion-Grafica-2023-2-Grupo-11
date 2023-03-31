@@ -99,7 +99,8 @@ int main( )
     // Load models
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
-  
+    Model cuerpofish((char*)"Models/Pokeball/pokeArriba.obj");
+    Model colafish((char*)"Models/Pokeball/pokeAbajo.obj");
 
     // Game loop
     while (!glfwWindowShouldClose(window))
@@ -128,8 +129,6 @@ int main( )
         model = glm::rotate(model, glm::radians(rotFish), glm::vec3(0.0f, 1.0f, 0.0f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         // Cargar un modelo
-        Model cuerpofish((char*)"Models/Nemo/cuerpofish.obj");
-        Model colafish((char*)"Models/Nemo/cola.obj");
         colafish.Draw(shader);
         model = glm::mat4(1);
         cuerpofish.Draw(shader);

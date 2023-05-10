@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Practica5\Practica5\Main.cpp">
+    <ClCompile Include="317242409_REPORTE6_GPO11.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
